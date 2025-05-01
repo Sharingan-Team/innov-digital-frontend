@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@config "../../tailwind.config.js";
+
+@theme {
+  --color-lightBackground: #F1F5F9;
+  --color-lightText: #2E3A59;
+  --color-lightPrimaryButton: #0D4D9A;
+  --color-lightSecondaryButton: #E1E8F4;
+  --color-lightSidebar: #FFFFFF;
+
+  --color-darkBackground: #000000;
+  --color-darkText: #E0E7F1;
+  --color-darkPrimaryButton: #3A7BD5;
+  --color-darkSecondaryButton: #2A2E3C;
+  --color-darkSidebar: #121C2C;
+}
