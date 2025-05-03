@@ -4,6 +4,8 @@ import { useState, useRef, useEffect } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { VirtualKeyboard } from '@/components/VirtualKeyboard';
 import API from '@/utils/api-client';
+import logo from "../../../public/Image.svg";
+import Image from 'next/image';
 
 export default function LoginPage() {
   const [step, setStep] = useState(1);
@@ -158,7 +160,8 @@ export default function LoginPage() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100 relative">
       <div className="bg-white p-8 rounded-2xl shadow-lg w-full max-w-md z-10">
-        <h2 className="text-2xl font-bold mb-4 text-center">Login - Step {step}</h2>
+        <Image src={logo} alt="logo" className='my-5'/>
+        <h2 className="text-2xl font-bold mb-4 text-center">Login</h2>
         {errors.general && <p className="text-red-500 text-center mb-2">{errors.general}</p>}
         {successMsg && <p className="text-green-600 text-center mb-2">{successMsg}</p>}
         <form onSubmit={handleSubmit}>
