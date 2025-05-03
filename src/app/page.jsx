@@ -2,10 +2,10 @@
 
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import FaceEnrollmentPage from "./Signup/Signup";
-import { FaceVerificationPage } from "./Signin/Signin";
-import SignupPage from "./Signup/Signup";
-import LoginPage from "./Signin/Signin";
+import FaceEnrollmentPage from "./signup/page";
+import { FaceVerificationPage } from "./signin/page";
+import SignupPage from "./signup/page";
+import LoginPage from "./signin/page";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -35,8 +35,6 @@ export default function Home() {
 
   return (
     <div>
-      <LoginPage/>
-      {/* <SignupPage/> */}
     </div>
   );
 }
